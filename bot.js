@@ -3,8 +3,8 @@ const config = require("../weather_bot/config");
 
 const axios = require('axios')
 
-const botToken = '1374624171:AAFIKwPfJ8AKO742s2QHUCz7RCHyuHQv5Rs'
-const apikey = "eb6f4b0bd8d38654244b4e638355395f90da3983e4ccf631dbcb8c16ec9882a9"
+const botToken = process.env.TOKEN
+const apikey = process.env.APIKEY
 
 const bot = new Telegraf(botToken)
 
